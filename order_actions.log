@@ -1,0 +1,20 @@
+2026-04-11 06:13:47 - Action: cancel, OrderID: ORD-2026-875C0C, Item: Nuon Beige Cargo Pants, Reason: Test cancel
+  -> Order found, User ID: 
+  -> Item found: Nuon Beige Cargo Pants
+  -> Cancellation recorded, ID: 1
+  -> Order item status updated to Cancelled
+2026-04-11 06:47:15 - Action: cancel, OrderID: ORD-2026-77074F, Item: LEATHER EFFECT JACKET WITH DETACHABLE COLLAR, Reason: size is short
+  -> Order found, User ID: 
+  -> Item found: LEATHER EFFECT JACKET WITH DETACHABLE COLLAR
+  -> Cancellation recorded, ID: 2
+  -> Order item status updated to Cancelled
+2026-04-11 16:32:37 - Action: cancel, OrderID: ORD-2026-DE7D43, Item: HEAVYWEIGHT BASIC HOODIE, Reason: Shipping is taking too long
+  -> Order found, User ID: 
+  -> Item found: HEAVYWEIGHT BASIC HOODIE
+  -> Cancellation recorded, ID: 3
+  -> Order item status updated to Cancelled
+2026-04-11 16:33:14 - Action: cancel, OrderID: ORD-2026-876FE1, Item: LEATHER EFFECT JACKET WITH DETACHABLE COLLAR, Reason: Ordered the wrong item by mistake
+  -> Order found, User ID: 
+  -> Item found: LEATHER EFFECT JACKET WITH DETACHABLE COLLAR
+  -> Cancellation recorded, ID: 4
+  -> Order item status updated to Cancelled

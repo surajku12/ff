@@ -1,0 +1,641 @@
+{
+    "timestamp": "2026-04-11 03:45:25",
+    "json_received": "{\"name\":\"SANJAY KUMAR SHRIVASTAVA\",\"email\":\"sakumar4@gmail.com\",\"mobile\":\"9973560884\",\"pincode\":\"390016\",\"street\":\"144 PRATHAM SHRUSTI NR PANCHVATI CIRCLE CANAL ROAD GROWA VADODARA\",\"city\":\"Vadodara\",\"state\":\"Gujarat\",\"payment_method\":\"cod\",\"items\":[{\"name\":\"Nuon Beige Cargo Pants\",\"price\":450,\"size\":\"S\",\"qty\":1}],\"subtotal\":450}",
+    "decoded_data": {
+        "name": "SANJAY KUMAR SHRIVASTAVA",
+        "email": "sakumar4@gmail.com",
+        "mobile": "9973560884",
+        "pincode": "390016",
+        "street": "144 PRATHAM SHRUSTI NR PANCHVATI CIRCLE CANAL ROAD GROWA VADODARA",
+        "city": "Vadodara",
+        "state": "Gujarat",
+        "payment_method": "cod",
+        "items": [
+            {
+                "name": "Nuon Beige Cargo Pants",
+                "price": 450,
+                "size": "S",
+                "qty": 1
+            }
+        ],
+        "subtotal": 450
+    },
+    "json_error": "No error"
+}
+---
+Processing order with subtotal: 450
+Generated tracking ID: ORD-2026-875C0C
+Transaction started
+Order insert params: ["ORD-2026-875C0C",null,"SANJAY KUMAR SHRIVASTAVA","9973560884","390016","144 PRATHAM SHRUSTI NR PANCHVATI CIRCLE CANAL ROAD GROWA VADODARA","Vadodara","Gujarat","cod",null,450,81,531]
+Order inserted successfully
+Item insert params: ["ORD-2026-875C0C","Nuon Beige Cargo Pants",450,1,"S"]
+All items inserted successfully
+Transaction committed successfully
+
+{
+    "timestamp": "2026-04-11 03:55:29",
+    "json_received": "{\"name\":\"SANJAY KUMAR SHRIVASTAVA\",\"email\":\"sakumar4@gmail.com\",\"mobile\":\"9973560884\",\"pincode\":\"390016\",\"street\":\"144 PRATHAM SHRUSTI NR PANCHVATI CIRCLE CANAL ROAD GROWA VADODARA\",\"city\":\"Vadodara\",\"state\":\"Gujarat\",\"payment_method\":\"netbanking\",\"items\":[{\"name\":\"LEATHER EFFECT JACKET WITH DETACHABLE COLLAR\",\"price\":2500,\"size\":\"S\",\"qty\":1}],\"subtotal\":2500}",
+    "decoded_data": {
+        "name": "SANJAY KUMAR SHRIVASTAVA",
+        "email": "sakumar4@gmail.com",
+        "mobile": "9973560884",
+        "pincode": "390016",
+        "street": "144 PRATHAM SHRUSTI NR PANCHVATI CIRCLE CANAL ROAD GROWA VADODARA",
+        "city": "Vadodara",
+        "state": "Gujarat",
+        "payment_method": "netbanking",
+        "items": [
+            {
+                "name": "LEATHER EFFECT JACKET WITH DETACHABLE COLLAR",
+                "price": 2500,
+                "size": "S",
+                "qty": 1
+            }
+        ],
+        "subtotal": 2500
+    },
+    "json_error": "No error"
+}
+---
+Processing order with subtotal: 2500
+Generated tracking ID: ORD-2026-731CAF
+Transaction started
+Order insert params: ["ORD-2026-731CAF",null,"SANJAY KUMAR SHRIVASTAVA","9973560884","390016","144 PRATHAM SHRUSTI NR PANCHVATI CIRCLE CANAL ROAD GROWA VADODARA","Vadodara","Gujarat","netbanking",null,2500,450,2950]
+Order inserted successfully
+Item insert params: ["ORD-2026-731CAF","LEATHER EFFECT JACKET WITH DETACHABLE COLLAR",2500,1,"S"]
+All items inserted successfully
+Transaction committed successfully
+
+{
+    "timestamp": "2026-04-11 04:00:56",
+    "json_received": "{\"name\":\"SANJAY KUMAR SHRIVASTAVA\",\"email\":\"sakumar4@gmail.com\",\"mobile\":\"9973560884\",\"pincode\":\"390016\",\"street\":\"144 PRATHAM SHRUSTI NR PANCHVATI CIRCLE CANAL ROAD GROWA VADODARA\",\"city\":\"Vadodara\",\"state\":\"Gujarat\",\"payment_method\":\"cod\",\"items\":[{\"name\":\"LEATHER EFFECT JACKET WITH DETACHABLE COLLAR\",\"price\":2500,\"size\":\"S\",\"qty\":1}],\"subtotal\":2500}",
+    "decoded_data": {
+        "name": "SANJAY KUMAR SHRIVASTAVA",
+        "email": "sakumar4@gmail.com",
+        "mobile": "9973560884",
+        "pincode": "390016",
+        "street": "144 PRATHAM SHRUSTI NR PANCHVATI CIRCLE CANAL ROAD GROWA VADODARA",
+        "city": "Vadodara",
+        "state": "Gujarat",
+        "payment_method": "cod",
+        "items": [
+            {
+                "name": "LEATHER EFFECT JACKET WITH DETACHABLE COLLAR",
+                "price": 2500,
+                "size": "S",
+                "qty": 1
+            }
+        ],
+        "subtotal": 2500
+    },
+    "json_error": "No error"
+}
+---
+Processing order with subtotal: 2500
+Generated tracking ID: ORD-2026-341DA5
+Transaction started
+Order insert params: ["ORD-2026-341DA5",null,"SANJAY KUMAR SHRIVASTAVA","9973560884","390016","144 PRATHAM SHRUSTI NR PANCHVATI CIRCLE CANAL ROAD GROWA VADODARA","Vadodara","Gujarat","cod",null,2500,450,2950]
+Order inserted successfully
+Item insert params: ["ORD-2026-341DA5","LEATHER EFFECT JACKET WITH DETACHABLE COLLAR",2500,1,"S"]
+All items inserted successfully
+Transaction committed successfully
+
+{
+    "timestamp": "2026-04-11 04:01:16",
+    "json_received": "{\"name\":\"SANJAY KUMAR SHRIVASTAVA\",\"email\":\"sakumar4@gmail.com\",\"mobile\":\"9973560884\",\"pincode\":\"390016\",\"street\":\"144 PRATHAM SHRUSTI NR PANCHVATI CIRCLE CANAL ROAD GROWA VADODARA\",\"city\":\"Vadodara\",\"state\":\"Gujarat\",\"payment_method\":\"credit-card\",\"items\":[{\"name\":\"LEATHER EFFECT JACKET WITH DETACHABLE COLLAR\",\"price\":2500,\"size\":\"S\",\"qty\":1}],\"subtotal\":2500}",
+    "decoded_data": {
+        "name": "SANJAY KUMAR SHRIVASTAVA",
+        "email": "sakumar4@gmail.com",
+        "mobile": "9973560884",
+        "pincode": "390016",
+        "street": "144 PRATHAM SHRUSTI NR PANCHVATI CIRCLE CANAL ROAD GROWA VADODARA",
+        "city": "Vadodara",
+        "state": "Gujarat",
+        "payment_method": "credit-card",
+        "items": [
+            {
+                "name": "LEATHER EFFECT JACKET WITH DETACHABLE COLLAR",
+                "price": 2500,
+                "size": "S",
+                "qty": 1
+            }
+        ],
+        "subtotal": 2500
+    },
+    "json_error": "No error"
+}
+---
+Processing order with subtotal: 2500
+Generated tracking ID: ORD-2026-934742
+Transaction started
+Order insert params: ["ORD-2026-934742",null,"SANJAY KUMAR SHRIVASTAVA","9973560884","390016","144 PRATHAM SHRUSTI NR PANCHVATI CIRCLE CANAL ROAD GROWA VADODARA","Vadodara","Gujarat","credit-card",null,2500,450,2950]
+Order inserted successfully
+Item insert params: ["ORD-2026-934742","LEATHER EFFECT JACKET WITH DETACHABLE COLLAR",2500,1,"S"]
+All items inserted successfully
+Transaction committed successfully
+
+{
+    "timestamp": "2026-04-11 04:02:29",
+    "json_received": "{\"name\":\"SANJAY KUMAR SHRIVASTAVA\",\"email\":\"sakumar4@gmail.com\",\"mobile\":\"9973560884\",\"pincode\":\"390016\",\"street\":\"144 PRATHAM SHRUSTI NR PANCHVATI CIRCLE CANAL ROAD GROWA VADODARA\",\"city\":\"Vadodara\",\"state\":\"Gujarat\",\"payment_method\":\"credit-card\",\"items\":[{\"name\":\"LEATHER EFFECT JACKET WITH DETACHABLE COLLAR\",\"price\":2500,\"size\":\"S\",\"qty\":1},{\"name\":\"Nuon Beige Cargo Pants\",\"price\":450,\"size\":\"S\",\"qty\":1}],\"subtotal\":2950}",
+    "decoded_data": {
+        "name": "SANJAY KUMAR SHRIVASTAVA",
+        "email": "sakumar4@gmail.com",
+        "mobile": "9973560884",
+        "pincode": "390016",
+        "street": "144 PRATHAM SHRUSTI NR PANCHVATI CIRCLE CANAL ROAD GROWA VADODARA",
+        "city": "Vadodara",
+        "state": "Gujarat",
+        "payment_method": "credit-card",
+        "items": [
+            {
+                "name": "LEATHER EFFECT JACKET WITH DETACHABLE COLLAR",
+                "price": 2500,
+                "size": "S",
+                "qty": 1
+            },
+            {
+                "name": "Nuon Beige Cargo Pants",
+                "price": 450,
+                "size": "S",
+                "qty": 1
+            }
+        ],
+        "subtotal": 2950
+    },
+    "json_error": "No error"
+}
+---
+Processing order with subtotal: 2950
+Generated tracking ID: ORD-2026-46438C
+Transaction started
+Order insert params: ["ORD-2026-46438C",null,"SANJAY KUMAR SHRIVASTAVA","9973560884","390016","144 PRATHAM SHRUSTI NR PANCHVATI CIRCLE CANAL ROAD GROWA VADODARA","Vadodara","Gujarat","credit-card",null,2950,531,3481]
+Order inserted successfully
+Item insert params: ["ORD-2026-46438C","LEATHER EFFECT JACKET WITH DETACHABLE COLLAR",2500,1,"S"]
+Item insert params: ["ORD-2026-46438C","Nuon Beige Cargo Pants",450,1,"S"]
+All items inserted successfully
+Transaction committed successfully
+
+{
+    "timestamp": "2026-04-11 04:10:45",
+    "json_received": "{\"name\":\"RAJAN KUMAR SINGH\",\"email\":\"rajan50@gmail.com\",\"mobile\":\"9973560884\",\"pincode\":\"841221\",\"street\":\"WARD NO-10 GOKULVILA ROAD\",\"city\":\"Saran\",\"state\":\"Bihar\",\"payment_method\":\"credit-card\",\"items\":[{\"name\":\"Nuon Red Printed T-Shirt\",\"price\":650,\"size\":\"S\",\"qty\":1}],\"subtotal\":650}",
+    "decoded_data": {
+        "name": "RAJAN KUMAR SINGH",
+        "email": "rajan50@gmail.com",
+        "mobile": "9973560884",
+        "pincode": "841221",
+        "street": "WARD NO-10 GOKULVILA ROAD",
+        "city": "Saran",
+        "state": "Bihar",
+        "payment_method": "credit-card",
+        "items": [
+            {
+                "name": "Nuon Red Printed T-Shirt",
+                "price": 650,
+                "size": "S",
+                "qty": 1
+            }
+        ],
+        "subtotal": 650
+    },
+    "json_error": "No error"
+}
+---
+Processing order with subtotal: 650
+Generated tracking ID: ORD-2026-E38EBB
+Transaction started
+Order insert params: ["ORD-2026-E38EBB",null,"RAJAN KUMAR SINGH","9973560884","841221","WARD NO-10 GOKULVILA ROAD","Saran","Bihar","credit-card",null,650,117,767]
+Order inserted successfully
+Item insert params: ["ORD-2026-E38EBB","Nuon Red Printed T-Shirt",650,1,"S"]
+All items inserted successfully
+Transaction committed successfully
+
+{
+    "timestamp": "2026-04-11 04:23:00",
+    "json_received": "{\"name\":\"RAJAN KUMAR SINGH\",\"email\":\"rajan50@gmail.com\",\"mobile\":\"9973560884\",\"pincode\":\"841221\",\"street\":\"WARD NO-10 GOKULVILA ROAD\",\"city\":\"Saran\",\"state\":\"Bihar\",\"payment_method\":\"credit-card\",\"items\":[{\"name\":\"Nuon Red Striped Polo T-Shirt\",\"price\":550,\"size\":\"S\",\"qty\":1}],\"subtotal\":550}",
+    "decoded_data": {
+        "name": "RAJAN KUMAR SINGH",
+        "email": "rajan50@gmail.com",
+        "mobile": "9973560884",
+        "pincode": "841221",
+        "street": "WARD NO-10 GOKULVILA ROAD",
+        "city": "Saran",
+        "state": "Bihar",
+        "payment_method": "credit-card",
+        "items": [
+            {
+                "name": "Nuon Red Striped Polo T-Shirt",
+                "price": 550,
+                "size": "S",
+                "qty": 1
+            }
+        ],
+        "subtotal": 550
+    },
+    "json_error": "No error"
+}
+---
+Processing order with subtotal: 550
+Generated tracking ID: ORD-2026-459229
+Transaction started
+Order insert params: ["ORD-2026-459229",null,"RAJAN KUMAR SINGH","9973560884","841221","WARD NO-10 GOKULVILA ROAD","Saran","Bihar","credit-card",null,550,99,649]
+Order inserted successfully
+Item insert params: ["ORD-2026-459229","Nuon Red Striped Polo T-Shirt",550,1,"S"]
+All items inserted successfully
+Transaction committed successfully
+
+{
+    "timestamp": "2026-04-11 04:29:18",
+    "json_received": "{\"user_id\":null,\"name\":\"RAJAN KUMAR SINGH\",\"email\":\"rajan50@gmail.com\",\"mobile\":\"9973560884\",\"pincode\":\"841221\",\"street\":\"WARD NO-10 GOKULVILA ROAD\",\"city\":\"Saran\",\"state\":\"Bihar\",\"payment_method\":\"credit-card\",\"payment_details\":\"{\\\"card_name\\\":\\\"rajan\\\",\\\"card_last4\\\":\\\"8887\\\"}\",\"items\":[{\"name\":\"HEAVYWEIGHT BASIC HOODIE\",\"price\":890,\"size\":\"S\",\"qty\":1}],\"subtotal\":890}",
+    "decoded_data": {
+        "user_id": null,
+        "name": "RAJAN KUMAR SINGH",
+        "email": "rajan50@gmail.com",
+        "mobile": "9973560884",
+        "pincode": "841221",
+        "street": "WARD NO-10 GOKULVILA ROAD",
+        "city": "Saran",
+        "state": "Bihar",
+        "payment_method": "credit-card",
+        "payment_details": "{\"card_name\":\"rajan\",\"card_last4\":\"8887\"}",
+        "items": [
+            {
+                "name": "HEAVYWEIGHT BASIC HOODIE",
+                "price": 890,
+                "size": "S",
+                "qty": 1
+            }
+        ],
+        "subtotal": 890
+    },
+    "json_error": "No error"
+}
+---
+Processing order with subtotal: 890
+Generated tracking ID: ORD-2026-6C27FA
+Transaction started
+Order insert params: ["ORD-2026-6C27FA",null,"RAJAN KUMAR SINGH","9973560884","841221","WARD NO-10 GOKULVILA ROAD","Saran","Bihar","credit-card","{\"card_name\":\"rajan\",\"card_last4\":\"8887\"}",890,160.2,1050.2]
+Order inserted successfully
+Item insert params: ["ORD-2026-6C27FA","HEAVYWEIGHT BASIC HOODIE",890,1,"S"]
+All items inserted successfully
+Transaction committed successfully
+
+{
+    "timestamp": "2026-04-11 06:22:54",
+    "json_received": "{\"user_id\":null,\"name\":\"Raj\",\"email\":\"raj438@gmail.com\",\"mobile\":\"9427604607\",\"pincode\":\"392011\",\"street\":\"zadeshwar\",\"city\":\"Bharuch\",\"state\":\"Gujarat\",\"payment_method\":\"cod\",\"payment_details\":\"\",\"items\":[{\"name\":\"LEATHER EFFECT JACKET WITH DETACHABLE COLLAR\",\"price\":2500,\"size\":\"S\",\"qty\":1}],\"subtotal\":2500}",
+    "decoded_data": {
+        "user_id": null,
+        "name": "Raj",
+        "email": "raj438@gmail.com",
+        "mobile": "9427604607",
+        "pincode": "392011",
+        "street": "zadeshwar",
+        "city": "Bharuch",
+        "state": "Gujarat",
+        "payment_method": "cod",
+        "payment_details": "",
+        "items": [
+            {
+                "name": "LEATHER EFFECT JACKET WITH DETACHABLE COLLAR",
+                "price": 2500,
+                "size": "S",
+                "qty": 1
+            }
+        ],
+        "subtotal": 2500
+    },
+    "json_error": "No error"
+}
+---
+Processing order with subtotal: 2500
+Generated tracking ID: ORD-2026-F1DEB9
+Transaction started
+Order insert params: ["ORD-2026-F1DEB9",null,"Raj","9427604607","392011","zadeshwar","Bharuch","Gujarat","cod","",2500,450,2950]
+Order inserted successfully
+Item insert params: ["ORD-2026-F1DEB9","LEATHER EFFECT JACKET WITH DETACHABLE COLLAR",2500,1,"S"]
+All items inserted successfully
+Transaction committed successfully
+
+{
+    "timestamp": "2026-04-11 06:46:49",
+    "json_received": "{\"user_id\":null,\"name\":\"SUSHIL KUMAR ANAND GIRI\",\"email\":\"girisurajkumar438@gmail.com\",\"mobile\":\"09978733502\",\"pincode\":\"392011\",\"street\":\"zadeshwar\",\"city\":\"Bharuch\",\"state\":\"Gujarat\",\"payment_method\":\"upi\",\"payment_details\":\"9427604600@sbi\",\"items\":[{\"name\":\"LEATHER EFFECT JACKET WITH DETACHABLE COLLAR\",\"price\":2500,\"size\":\"S\",\"qty\":1}],\"subtotal\":2500}",
+    "decoded_data": {
+        "user_id": null,
+        "name": "SUSHIL KUMAR ANAND GIRI",
+        "email": "girisurajkumar438@gmail.com",
+        "mobile": "09978733502",
+        "pincode": "392011",
+        "street": "zadeshwar",
+        "city": "Bharuch",
+        "state": "Gujarat",
+        "payment_method": "upi",
+        "payment_details": "9427604600@sbi",
+        "items": [
+            {
+                "name": "LEATHER EFFECT JACKET WITH DETACHABLE COLLAR",
+                "price": 2500,
+                "size": "S",
+                "qty": 1
+            }
+        ],
+        "subtotal": 2500
+    },
+    "json_error": "No error"
+}
+---
+Processing order with subtotal: 2500
+Generated tracking ID: ORD-2026-77074F
+Transaction started
+Order insert params: ["ORD-2026-77074F",null,"SUSHIL KUMAR ANAND GIRI","09978733502","392011","zadeshwar","Bharuch","Gujarat","upi","9427604600@sbi",2500,450,2950]
+Order inserted successfully
+Item insert params: ["ORD-2026-77074F","LEATHER EFFECT JACKET WITH DETACHABLE COLLAR",2500,1,"S"]
+All items inserted successfully
+Transaction committed successfully
+
+{
+    "timestamp": "2026-04-11 06:59:29",
+    "json_received": "{\"user_id\":null,\"name\":\"Raj\",\"email\":\"raj438@gmail.com\",\"mobile\":\"9427604607\",\"pincode\":\"392011\",\"street\":\"zadeshwar\",\"city\":\"Bharuch\",\"state\":\"Gujarat\",\"payment_method\":\"cod\",\"payment_details\":\"\",\"items\":[{\"name\":\"LEATHER EFFECT JACKET WITH DETACHABLE COLLAR\",\"price\":2500,\"size\":\"S\",\"qty\":1}],\"subtotal\":2500}",
+    "decoded_data": {
+        "user_id": null,
+        "name": "Raj",
+        "email": "raj438@gmail.com",
+        "mobile": "9427604607",
+        "pincode": "392011",
+        "street": "zadeshwar",
+        "city": "Bharuch",
+        "state": "Gujarat",
+        "payment_method": "cod",
+        "payment_details": "",
+        "items": [
+            {
+                "name": "LEATHER EFFECT JACKET WITH DETACHABLE COLLAR",
+                "price": 2500,
+                "size": "S",
+                "qty": 1
+            }
+        ],
+        "subtotal": 2500
+    },
+    "json_error": "No error"
+}
+---
+Processing order with subtotal: 2500
+Generated tracking ID: ORD-2026-418C47
+Transaction started
+Order insert params: ["ORD-2026-418C47",null,"Raj","9427604607","392011","zadeshwar","Bharuch","Gujarat","cod","",2500,450,2950]
+Order inserted successfully
+Item insert params: ["ORD-2026-418C47","LEATHER EFFECT JACKET WITH DETACHABLE COLLAR",2500,1,"S"]
+All items inserted successfully
+Transaction committed successfully
+
+{
+    "timestamp": "2026-04-11 09:04:19",
+    "json_received": "{\"user_id\":null,\"name\":\"Raj\",\"email\":\"raj438@gmail.com\",\"mobile\":\"9427604607\",\"pincode\":\"392011\",\"street\":\"zadeshwar\",\"city\":\"Bharuch\",\"state\":\"Gujarat\",\"payment_method\":\"cod\",\"payment_details\":\"\",\"items\":[{\"name\":\"LEATHER EFFECT JACKET WITH DETACHABLE COLLAR\",\"price\":2500,\"size\":\"M\",\"qty\":1}],\"subtotal\":2500}",
+    "decoded_data": {
+        "user_id": null,
+        "name": "Raj",
+        "email": "raj438@gmail.com",
+        "mobile": "9427604607",
+        "pincode": "392011",
+        "street": "zadeshwar",
+        "city": "Bharuch",
+        "state": "Gujarat",
+        "payment_method": "cod",
+        "payment_details": "",
+        "items": [
+            {
+                "name": "LEATHER EFFECT JACKET WITH DETACHABLE COLLAR",
+                "price": 2500,
+                "size": "M",
+                "qty": 1
+            }
+        ],
+        "subtotal": 2500
+    },
+    "json_error": "No error"
+}
+---
+Processing order with subtotal: 2500
+Generated tracking ID: ORD-2026-CC801F
+Transaction started
+Order insert params: ["ORD-2026-CC801F",null,"Raj","9427604607","392011","zadeshwar","Bharuch","Gujarat","cod","",2500,450,2950]
+Order inserted successfully
+Item insert params: ["ORD-2026-CC801F","LEATHER EFFECT JACKET WITH DETACHABLE COLLAR",2500,1,"M"]
+All items inserted successfully
+Transaction committed successfully
+
+{
+    "timestamp": "2026-04-11 15:56:25",
+    "json_received": "{\"user_id\":null,\"name\":\"Raj\",\"email\":\"shop@gmail.com\",\"mobile\":\"9978733502\",\"pincode\":\"392011\",\"street\":\"zadeshwar\",\"city\":\"Bharuch\",\"state\":\"Gujarat\",\"payment_method\":\"cod\",\"payment_details\":\"\",\"items\":[{\"name\":\"LEATHER EFFECT JACKET WITH DETACHABLE COLLAR\",\"price\":2500,\"size\":\"S\",\"qty\":1}],\"subtotal\":2500}",
+    "decoded_data": {
+        "user_id": null,
+        "name": "Raj",
+        "email": "shop@gmail.com",
+        "mobile": "9978733502",
+        "pincode": "392011",
+        "street": "zadeshwar",
+        "city": "Bharuch",
+        "state": "Gujarat",
+        "payment_method": "cod",
+        "payment_details": "",
+        "items": [
+            {
+                "name": "LEATHER EFFECT JACKET WITH DETACHABLE COLLAR",
+                "price": 2500,
+                "size": "S",
+                "qty": 1
+            }
+        ],
+        "subtotal": 2500
+    },
+    "json_error": "No error"
+}
+---
+Processing order with subtotal: 2500
+Generated tracking ID: ORD-2026-876FE1
+Transaction started
+Order insert params: ["ORD-2026-876FE1",null,"Raj","9978733502","392011","zadeshwar","Bharuch","Gujarat","cod","",2500,450,2950]
+Order inserted successfully
+Item insert params: ["ORD-2026-876FE1","LEATHER EFFECT JACKET WITH DETACHABLE COLLAR",2500,1,"S"]
+All items inserted successfully
+Transaction committed successfully
+
+{
+    "timestamp": "2026-04-11 16:05:02",
+    "json_received": "{\"user_id\":null,\"name\":\"Raj\",\"email\":\"shop@gmail.com\",\"mobile\":\"9978733502\",\"pincode\":\"392011\",\"street\":\"zadeshwar\",\"city\":\"Bharuch\",\"state\":\"Gujarat\",\"payment_method\":\"cod\",\"payment_details\":\"\",\"items\":[{\"name\":\"LEATHER EFFECT JACKET WITH DETACHABLE COLLAR\",\"price\":2500,\"size\":\"S\",\"qty\":1}],\"subtotal\":2500}",
+    "decoded_data": {
+        "user_id": null,
+        "name": "Raj",
+        "email": "shop@gmail.com",
+        "mobile": "9978733502",
+        "pincode": "392011",
+        "street": "zadeshwar",
+        "city": "Bharuch",
+        "state": "Gujarat",
+        "payment_method": "cod",
+        "payment_details": "",
+        "items": [
+            {
+                "name": "LEATHER EFFECT JACKET WITH DETACHABLE COLLAR",
+                "price": 2500,
+                "size": "S",
+                "qty": 1
+            }
+        ],
+        "subtotal": 2500
+    },
+    "json_error": "No error"
+}
+---
+Processing order with subtotal: 2500
+Generated tracking ID: ORD-2026-3CF7AB
+Transaction started
+Order insert params: ["ORD-2026-3CF7AB",null,"Raj","9978733502","392011","zadeshwar","Bharuch","Gujarat","cod","",2500,450,2950]
+Order inserted successfully
+Item insert params: ["ORD-2026-3CF7AB","LEATHER EFFECT JACKET WITH DETACHABLE COLLAR",2500,1,"S"]
+All items inserted successfully
+Transaction committed successfully
+
+{
+    "timestamp": "2026-04-11 16:08:49",
+    "json_received": "{\"user_id\":null,\"name\":\"Raj\",\"email\":\"shop@gmail.com\",\"mobile\":\"9978733502\",\"pincode\":\"392011\",\"street\":\"zadeshwar\",\"city\":\"Bharuch\",\"state\":\"Gujarat\",\"payment_method\":\"cod\",\"payment_details\":\"\",\"items\":[{\"name\":\"HEAVYWEIGHT BASIC HOODIE\",\"price\":890,\"size\":\"S\",\"qty\":1}],\"subtotal\":890}",
+    "decoded_data": {
+        "user_id": null,
+        "name": "Raj",
+        "email": "shop@gmail.com",
+        "mobile": "9978733502",
+        "pincode": "392011",
+        "street": "zadeshwar",
+        "city": "Bharuch",
+        "state": "Gujarat",
+        "payment_method": "cod",
+        "payment_details": "",
+        "items": [
+            {
+                "name": "HEAVYWEIGHT BASIC HOODIE",
+                "price": 890,
+                "size": "S",
+                "qty": 1
+            }
+        ],
+        "subtotal": 890
+    },
+    "json_error": "No error"
+}
+---
+Processing order with subtotal: 890
+Generated tracking ID: ORD-2026-FB1055
+Transaction started
+Order insert params: ["ORD-2026-FB1055",null,"Raj","9978733502","392011","zadeshwar","Bharuch","Gujarat","cod","",890,160.2,1050.2]
+Order inserted successfully
+Item insert params: ["ORD-2026-FB1055","HEAVYWEIGHT BASIC HOODIE",890,1,"S"]
+All items inserted successfully
+Transaction committed successfully
+
+{
+    "timestamp": "2026-04-11 16:14:21",
+    "json_received": "{\"user_id\":null,\"name\":\"Raj\",\"email\":\"shop@gmail.com\",\"mobile\":\"9978733502\",\"pincode\":\"392011\",\"street\":\"zadeshwar\",\"city\":\"Bharuch\",\"state\":\"Gujarat\",\"payment_method\":\"cod\",\"payment_details\":\"\",\"items\":[{\"name\":\"LEATHER EFFECT JACKET WITH DETACHABLE COLLAR\",\"price\":2500,\"size\":\"S\",\"qty\":1}],\"subtotal\":2500}",
+    "decoded_data": {
+        "user_id": null,
+        "name": "Raj",
+        "email": "shop@gmail.com",
+        "mobile": "9978733502",
+        "pincode": "392011",
+        "street": "zadeshwar",
+        "city": "Bharuch",
+        "state": "Gujarat",
+        "payment_method": "cod",
+        "payment_details": "",
+        "items": [
+            {
+                "name": "LEATHER EFFECT JACKET WITH DETACHABLE COLLAR",
+                "price": 2500,
+                "size": "S",
+                "qty": 1
+            }
+        ],
+        "subtotal": 2500
+    },
+    "json_error": "No error"
+}
+---
+Processing order with subtotal: 2500
+Generated tracking ID: ORD-2026-341760
+Transaction started
+Order insert params: ["ORD-2026-341760",null,"Raj","9978733502","392011","zadeshwar","Bharuch","Gujarat","cod","",2500,450,2950]
+Order inserted successfully
+Item insert params: ["ORD-2026-341760","LEATHER EFFECT JACKET WITH DETACHABLE COLLAR",2500,1,"S"]
+All items inserted successfully
+Transaction committed successfully
+
+{
+    "timestamp": "2026-04-11 16:26:15",
+    "json_received": "{\"user_id\":null,\"name\":\"Raj\",\"email\":\"shop@gmail.com\",\"mobile\":\"9978733502\",\"pincode\":\"392011\",\"street\":\"zadeshwar\",\"city\":\"Bharuch\",\"state\":\"Gujarat\",\"payment_method\":\"cod\",\"payment_details\":\"\",\"items\":[{\"name\":\"HEAVYWEIGHT BASIC HOODIE\",\"price\":890,\"size\":\"S\",\"qty\":1}],\"subtotal\":890}",
+    "decoded_data": {
+        "user_id": null,
+        "name": "Raj",
+        "email": "shop@gmail.com",
+        "mobile": "9978733502",
+        "pincode": "392011",
+        "street": "zadeshwar",
+        "city": "Bharuch",
+        "state": "Gujarat",
+        "payment_method": "cod",
+        "payment_details": "",
+        "items": [
+            {
+                "name": "HEAVYWEIGHT BASIC HOODIE",
+                "price": 890,
+                "size": "S",
+                "qty": 1
+            }
+        ],
+        "subtotal": 890
+    },
+    "json_error": "No error"
+}
+---
+Processing order with subtotal: 890
+Generated tracking ID: ORD-2026-DE7D43
+Transaction started
+Order insert params: ["ORD-2026-DE7D43",null,"Raj","9978733502","392011","zadeshwar","Bharuch","Gujarat","cod","",890,160.2,1050.2]
+Order inserted successfully
+Item insert params: ["ORD-2026-DE7D43","HEAVYWEIGHT BASIC HOODIE",890,1,"S"]
+All items inserted successfully
+Transaction committed successfully
+
+{
+    "timestamp": "2026-04-14 08:40:32",
+    "json_received": "{\"user_id\":null,\"name\":\"guru\",\"email\":\"guru@gmail.com\",\"mobile\":\"9978733502\",\"pincode\":\"392011\",\"street\":\"zadeshwar\",\"city\":\"Bharuch\",\"state\":\"Gujarat\",\"payment_method\":\"cod\",\"payment_details\":\"\",\"items\":[{\"name\":\"Urban Men's Sweater\",\"price\":1380,\"size\":\"S\",\"qty\":1}],\"subtotal\":1380}",
+    "decoded_data": {
+        "user_id": null,
+        "name": "guru",
+        "email": "guru@gmail.com",
+        "mobile": "9978733502",
+        "pincode": "392011",
+        "street": "zadeshwar",
+        "city": "Bharuch",
+        "state": "Gujarat",
+        "payment_method": "cod",
+        "payment_details": "",
+        "items": [
+            {
+                "name": "Urban Men's Sweater",
+                "price": 1380,
+                "size": "S",
+                "qty": 1
+            }
+        ],
+        "subtotal": 1380
+    },
+    "json_error": "No error"
+}
+---
+Processing order with subtotal: 1380
+Generated tracking ID: ORD-2026-D49C47
+Transaction started
+Order insert params: ["ORD-2026-D49C47",null,"guru","9978733502","392011","zadeshwar","Bharuch","Gujarat","cod","",1380,248.39999999999998,1628.4]
+Order inserted successfully
+Item insert params: ["ORD-2026-D49C47","Urban Men's Sweater",1380,1,"S"]
+All items inserted successfully
+Transaction committed successfully
+

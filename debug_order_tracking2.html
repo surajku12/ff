@@ -1,0 +1,272 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Tracking | FASHIOFY</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="container nav-flex">
+            <a href="index.php" class="logo">FASHIOFY</a>
+            <ul class="nav-links">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="men.php">Men</a></li>
+                <li><a href="women.php">Women</a></li>
+                <li><a href="kids.php">Kids</a></li>
+                <li><a href="wishlist.php">Wishlist</a></li>
+                <li><a href="order-history.php">Order History</a></li>
+                <li><a href="login.php">Login</a></li>
+            </ul>
+            <form class="search-form" onsubmit="event.preventDefault();">
+                <input id="search-input" class="search-bar" type="text" placeholder="Search products by name...">
+            </form>
+            <div class="cart-icon" onclick="toggleCart()">🛒 <span id="cart-count">0</span></div>
+        </nav>
+    </header>
+<div class="tracking-hero" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1555529733-0e670560f7e1?auto=format&fit=crop&q=80&w=2000') center/cover; color: white; padding: 100px 0; text-align: center;">
+    <h1 style="font-family:'Playfair Display', serif; font-size: 3.5rem; margin-bottom: 15px;">Order Tracking</h1>
+    <p style="opacity: 0.9; font-size: 1.1rem; letter-spacing: 1px;">Track your style journey in real-time</p>
+</div>
+
+<div class="tracking-container" style="max-width: 1000px; margin: -50px auto 100px; padding: 0 20px; position: relative; z-index: 10;">
+    
+    <!-- SEARCH ORDER -->
+    <div class="track-section" style="background: white; padding: 40px; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.05); margin-bottom: 40px;">
+        <h3 style="font-size: 1.2rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 25px; color: #111;">Track Your Parcel</h3>
+        <form action="order-tracking.php" method="GET" style="display: flex; gap: 15px;">
+            <input type="text" name="id" value="ORD-2026-341760" placeholder="Enter Tracking ID (e.g., ORD-2026-XXXX)" 
+                   style="flex: 1; padding: 18px; border: 2px solid #eee; border-radius: 8px; font-size: 1rem; outline: none; transition: border-color 0.3s ease;">
+            <button type="submit" style="background: #111; color: white; border: none; padding: 0 35px; border-radius: 8px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; cursor: pointer; transition: all 0.3s ease;">Track Now</button>
+        </form>
+    </div>
+
+    <div id="order-action-message" style="display:none; position: sticky; top: 20px; z-index: 50; background:#fff3cd; color:#856404; border:1px solid #ffeeba; border-radius:10px; padding:20px; margin-bottom:30px; font-weight:700; box-shadow: 0 8px 24px rgba(0,0,0,0.08);"></div>
+
+    <!-- SUCCESS MESSAGE -->
+    
+    
+    <div id="local-order-output" style="background: white; padding: 40px; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.05); margin-bottom: 40px; display: none;"></div>
+
+        <!-- ORDER SUMMARY -->
+    <div class="order-confirmation" style="background: white; padding: 50px; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.05);">
+        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; padding-bottom: 30px; margin-bottom: 40px;">
+            <div>
+                <div style="font-size: 0.8rem; font-weight: 700; color: #888; text-transform: uppercase; margin-bottom: 5px;">Tracking Number</div>
+                <div style="font-size: 1.5rem; font-weight: 900; color: #111;">ORD-2026-341760</div>
+                <div style="font-size: 0.85rem; color: #666; margin-top: 5px;">Placed on 11 Apr, 2026</div>
+            </div>
+            <div style="background: #f8f9fa; padding: 12px 25px; border-radius: 50px; border: 1px solid #eee; font-weight: 800; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; color: #c5a059;">
+                Status: Placed            </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 60px;">
+            <div>
+                <h4 style="font-size: 1.1rem; font-weight: 800; text-transform: uppercase; margin-bottom: 25px; color: #111; letter-spacing: 1px;">Items Details</h4>
+                <div style="display: flex; flex-direction: column; gap: 20px;">
+                                        <div style="display: flex; justify-content: space-between; align-items: center; padding: 15px; background: #fafafa; border-radius: 8px;">
+                        <div>
+                            <div style="font-weight: 800; font-size: 1rem; color: #111;">LEATHER EFFECT JACKET WITH DETACHABLE COLLAR</div>
+                            <div style="font-size: 0.85rem; color: #777;">Size: S | Qty: 1</div>
+                        </div>
+                        <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 10px;">
+                            <div style="font-weight: 800; color: #111;">₹2,500.00</div>
+                                                        <div style="display: flex; gap: 5px; flex-wrap: wrap;">
+                                <button type="button" onclick='window.location.href = "order-action.php?action=cancel&order_id=" + encodeURIComponent("ORD-2026-341760") + "&item_name=" + encodeURIComponent("LEATHER EFFECT JACKET WITH DETACHABLE COLLAR");' style="padding: 5px 10px; background: #e74c3c; color: white; border: none; border-radius: 4px; font-size: 0.8rem; cursor: pointer;">Cancel</button>
+                                <button type="button" onclick='window.location.href = "order-action.php?action=replacement&order_id=" + encodeURIComponent("ORD-2026-341760") + "&item_name=" + encodeURIComponent("LEATHER EFFECT JACKET WITH DETACHABLE COLLAR");' style="padding: 5px 10px; background: #f39c12; color: white; border: none; border-radius: 4px; font-size: 0.8rem; cursor: pointer;">Replace</button>
+                            </div>
+                                                    </div>
+                    </div>
+                                    </div>
+
+                <div style="margin-top: 40px; padding: 30px; background: #fdfaf4; border: 1px dashed #e3d2b2; border-radius: 8px;">
+                    <h4 style="font-size: 0.9rem; font-weight: 800; text-transform: uppercase; margin-bottom: 15px;">Shipping Address</h4>
+                    <p style="color: #666; line-height: 1.8; margin: 0;">
+                        <strong>Raj</strong><br>
+                        zadeshwar, Bharuch<br>
+                        Gujarat - 392011<br>
+                        Mobile: 9978733502                    </p>
+                </div>
+            </div>
+
+            <div>
+                <h4 style="font-size: 1.1rem; font-weight: 800; text-transform: uppercase; margin-bottom: 25px; color: #111; letter-spacing: 1px;">Payment Summary</h4>
+                <div style="background: #fcfcfc; padding: 30px; border-radius: 8px; border: 1px solid #eee;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 15px; font-size: 0.9rem; color: #666;">
+                        <span>Subtotal</span>
+                        <span>₹2,500.00</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 15px; font-size: 0.9rem; color: #666;">
+                        <span>GST (18%)</span>
+                        <span>₹450.00</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 15px; font-size: 0.9rem; color: #666;">
+                        <span>Shipping</span>
+                        <span style="color: #2ecc71;">FREE</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin-top: 20px; padding-top: 20px; border-top: 2px solid #111; font-weight: 900; font-size: 1.3rem; color: #111;">
+                        <span>Total</span>
+                        <span>₹2,950.00</span>
+                    </div>
+                    <div style="margin-top: 20px; font-size: 0.75rem; color: #999; text-align: center;">
+                        Method: cod                    </div>
+                </div>
+
+                <div style="margin-top: 30px;">
+                    <button onclick="window.print()" style="width: 100%; padding: 18px; border: 2px solid #111; background: transparent; color: #111; font-weight: 800; text-transform: uppercase; border-radius: 8px; cursor: pointer; transition: all 0.3s ease; margin-bottom: 15px;">Download Invoice</button>
+                    <button onclick="window.location.href='index.php'" style="width: 100%; padding: 18px; background: #111; color: white; border: none; font-weight: 800; text-transform: uppercase; border-radius: 8px; cursor: pointer; transition: all 0.3s ease;">Back to Shopping</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- TRACKING TIMELINE -->
+        <div style="margin-top: 60px; padding-top: 60px; border-top: 1px solid #eee;">
+            <h4 style="font-size: 1.1rem; font-weight: 800; text-transform: uppercase; margin-bottom: 40px; color: #111; letter-spacing: 1px; text-align: center;">Order Journey</h4>
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; max-width: 800px; margin: 0 auto; position: relative;">
+                <!-- Timeline Line -->
+                <div style="position: absolute; top: 15px; left: 0; right: 0; height: 3px; background: #eee; z-index: 1;"></div>
+                
+                                <div style="text-align: center; width: 80px; position: relative; z-index: 2;">
+                    <div style="width: 34px; height: 34px; background: #c5a059; border: 3px solid #c5a059; border-radius: 50%; margin: 0 auto 15px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 900; font-size: 0.8rem;">
+                        ✓                    </div>
+                    <div style="font-weight: 800; font-size: 0.75rem; text-transform: uppercase; color: #111; letter-spacing: 0.5px;">Placed</div>
+                </div>
+                                <div style="text-align: center; width: 80px; position: relative; z-index: 2;">
+                    <div style="width: 34px; height: 34px; background: white; border: 3px solid #eee; border-radius: 50%; margin: 0 auto 15px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 900; font-size: 0.8rem;">
+                                            </div>
+                    <div style="font-weight: 600; font-size: 0.75rem; text-transform: uppercase; color: #ccc; letter-spacing: 0.5px;">Confirmed</div>
+                </div>
+                                <div style="text-align: center; width: 80px; position: relative; z-index: 2;">
+                    <div style="width: 34px; height: 34px; background: white; border: 3px solid #eee; border-radius: 50%; margin: 0 auto 15px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 900; font-size: 0.8rem;">
+                                            </div>
+                    <div style="font-weight: 600; font-size: 0.75rem; text-transform: uppercase; color: #ccc; letter-spacing: 0.5px;">Shipped</div>
+                </div>
+                                <div style="text-align: center; width: 80px; position: relative; z-index: 2;">
+                    <div style="width: 34px; height: 34px; background: white; border: 3px solid #eee; border-radius: 50%; margin: 0 auto 15px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 900; font-size: 0.8rem;">
+                                            </div>
+                    <div style="font-weight: 600; font-size: 0.75rem; text-transform: uppercase; color: #ccc; letter-spacing: 0.5px;">Delivered</div>
+                </div>
+                            </div>
+        </div>
+    </div>
+
+    </div>
+
+<style>
+@media print {
+    .tracking-hero, form, button, .tracking-container > div:first-child {
+        display: none !important;
+    }
+    .tracking-container {
+        margin: 0 !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+    }
+    .order-confirmation {
+        box-shadow: none !important;
+        border: none !important;
+        padding: 0 !important;
+    }
+}
+</style>
+
+<script>
+    const trackingOrderId = "ORD-2026-341760";
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('local') !== '1') return;
+
+        const trackingId = urlParams.get('id');
+        const orders = JSON.parse(localStorage.getItem('FASHIOFY_orders') || '[]');
+        const localOrder = orders.find(o => o.id === trackingId);
+        if (!localOrder) return;
+
+        const output = document.getElementById('local-order-output');
+        if (!output) return;
+
+        output.style.display = 'block';
+
+        // Calculate dynamic status based on time
+        const orderDate = new Date(localOrder.date);
+        const now = new Date();
+        const hoursSinceOrder = (now - orderDate) / (1000 * 60 * 60);
+
+        let status = 'Placed';
+        let statusColor = '#f39c12';
+        if (hoursSinceOrder > 4) {
+            status = 'Delivered';
+            statusColor = '#27ae60';
+        } else if (hoursSinceOrder > 2) {
+            status = 'Shipped';
+            statusColor = '#3498db';
+        } else if (hoursSinceOrder > 1) {
+            status = 'Confirmed';
+            statusColor = '#e67e22';
+        }
+
+        let html = `<p><strong>Order ID:</strong> ${localOrder.id}</p>`;
+        html += `<p><strong>Status:</strong> <span style="color: ${statusColor}; font-weight: bold;">${status}</span></p>`;
+        html += `<p><strong>Name:</strong> ${localOrder.name || 'N/A'}</p>`;
+        html += `<p><strong>Email:</strong> ${localOrder.email || 'N/A'}</p>`;
+        html += `<p><strong>Mobile:</strong> ${localOrder.mobile || 'N/A'}</p>`;
+        html += `<p><strong>Address:</strong> ${localOrder.street || ''}, ${localOrder.city || ''}, ${localOrder.state || ''} - ${localOrder.pincode || ''}</p>`;
+        html += `<p><strong>Total:</strong> ₹${localOrder.total}</p>`;
+        html += '<h4 style="margin-top:20px;">Ordered Items</h4>';
+        localOrder.items.forEach(item => {
+            html += `<div style="margin-bottom:10px;"><strong>${item.name}</strong> (size: ${item.size || 'N/A'}) x${item.qty} - ₹${item.price * item.qty}</div>`;
+        });
+
+        output.innerHTML = html;
+    });
+
+    function showOrderActionMessage(message) {
+        const messageBox = document.getElementById('order-action-message');
+        if (!messageBox) return;
+        messageBox.innerHTML = `<span style="display:flex; align-items:center; gap:10px;"><strong>ℹ️</strong><span>${message}</span></span>`;
+        messageBox.style.display = 'block';
+        messageBox.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function requestCancel(itemName) {
+        if (!trackingOrderId) {
+            alert('Order ID missing. Please reload the page and try again.');
+            return;
+        }
+        window.location.href = 'order-action.php?action=cancel&order_id=' + encodeURIComponent(trackingOrderId) + '&item_name=' + encodeURIComponent(itemName);
+    }
+
+    function requestReplacement(itemName) {
+        if (!trackingOrderId) {
+            alert('Order ID missing. Please reload the page and try again.');
+            return;
+        }
+        window.location.href = 'order-action.php?action=replacement&order_id=' + encodeURIComponent(trackingOrderId) + '&item_name=' + encodeURIComponent(itemName);
+    }
+</script>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <h3>FASHIOFY</h3>
+                <p style="font-size: 0.9rem; margin-top: 10px; color: #bbb;">Defining modern style for the next generation.</p>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <p><a href="men.php" style="color:#bbb; text-decoration:none;">Men's Collection</a></p>
+                <p><a href="women.php" style="color:#bbb; text-decoration:none;">Women's Collection</a></p>
+                <p><a href="order-tracking.php" style="color:#bbb; text-decoration:none;">Track Order</a></p>
+            </div>
+            <div>
+                <h4>Newsletter</h4>
+                <input type="email" placeholder="Your Email" style="width: 100%; padding: 10px; margin-top: 10px;">
+            </div>
+        </div>
+        <div class="copyright">&copy; 2026 FASHIOFY</div>
+    </footer>
+    <div id="toast">Item added to cart!</div>
+    <script src="script.js?v=2"></script>
+</body>
+</html>
